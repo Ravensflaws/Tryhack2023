@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <a href="./home.html" class="navbar-brand" tabindex="-1">Tryhack 2023</a>
+        <div class="navbar">
+            <a class="nav-link" aria-current="page" href="./home.html" tabindex="-1">
+                <div class="container">
+                    <h3>Home</h3>
+                    <p>Navigate</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./blog.html" tabindex="-1">
+                <div class="container">
+                    <h3>Blog</h3>
+                    <p>Write Stories</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./game.html" tabindex="-1">
+                <div class="container">
+                    <h3>Game</h3>
+                    <p>Relax</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./focus.html" tabindex="-1">
+                <div class="container">
+                    <h3>Focus</h3>
+                    <p>Mind over body</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./quiz.html" tabindex="-1">
+                <div id="circle"></div>
+                <div class="container">
+                    <h3>Quiz</h3>
+                    <p>Test yourself</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Purpose of this quiz</span></div>
+        <div class="info-list">
+            <ul>
+                <li>Help you better understand how you've been feeling over the last 2 weeks</li>
+                <li>Point you in the right direction for helpful advice and information</li>
+            </ul>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box col-lg-6">
+        <header>
+            <div class="title">Human wellness assessment</div>
+
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz! (Higher The Better)</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="./scripts/questions.js" defer></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="./scripts/script.js" defer></script>
+</body>
+
+</html>

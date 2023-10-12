@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/memorygame.css">
+    <script src="./scripts/memorygame.js" defer></script>
+    <title>Game</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <a href="./home.html" class="navbar-brand" tabindex="-1">Tryhack 2023</a>
+        <div class="navbar">
+            <a class="nav-link" aria-current="page" href="./home.html" tabindex="-1">
+                <div class="container">
+                    <h3>Home</h3>
+                    <p>Navigate</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./blog.html" tabindex="-1">
+                <div class="container">
+                    <h3>Blog</h3>
+                    <p>Write Stories</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./game.html" tabindex="-1">
+                <div id="circle"></div>
+                <div class="container">
+                    <h3>Game</h3>
+                    <p>Relax</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./focus.html" tabindex="-1">
+                <div class="container">
+                    <h3>Focus</h3>
+                    <p>Mind over body</p>
+                </div>
+            </a>
+            <a class="nav-link" href="./quiz.html" tabindex="-1">
+                <div class="container">
+                    <h3>Quiz</h3>
+                    <p>Test yourself</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <div class="memorygame" style="margin-top: 200px;">
+        <div class="memorygame_controls">
+            <button class="start">Start</button>
+            <div class="memorygame_stats">
+                <div class="memorygame_moves">0 moves</div>
+                <div class="memorygame_timer">Time: 0 sec</div>
+            </div>
+        </div>
+        <div class="memorygame_board-container">
+            <div class="memorygame_board" data-dimension="4"></div>
+            <div class="memorygame_win">You won!</div>
+        </div>
+    </div>
+</body>
+
+</html>

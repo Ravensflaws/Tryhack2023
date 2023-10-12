@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url(./navbar.css);
+@import url(./footer.css);
+
+body {
+    height: 100%;
+    overflow: auto;
+    background-color: #87ff97;
+}
+
+header h1 {
+    text-align: center;
+    background-color: #87ff97;
+}
+
+section {
+    margin: 0 auto;
+    padding: 3em;
+    width: 100%;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.prompt {
+    padding: 1em;
+}
+
+textarea#comment {
+    width: 100%;
+    min-height: 5em;
+    max-height: 20em;
+    overflow: auto;
+    margin: 0em;
+}
+
+form {
+    margin: 3em;
+    display: none;
+    padding: 1em;
+}
+
+form div label {
+    vertical-align: top;
+}
+
+div.stories, div.writepls {
+    display: none;
+    overflow: auto;
+}
+
+div.storyData {
+    margin: 0 3em;
+    padding: 1em;
+}
+
+div.storyData, form#comment-form {
+    border: 2px solid white;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.storyData li {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgb(222, 219, 219);
+    border: 1em double black;
+}
+
+.storyshowing {
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}

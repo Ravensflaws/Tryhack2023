@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ad304b363e.js" crossorigin="anonymous"></script>
+  <script src="./scripts/java.js" defer></script>
+  <link rel="stylesheet" href="./css/focus.css" />
+  <title>Meditation App</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="./home.html" class="navbar-brand" tabindex="-1">Tryhack 2023</a>
+    <div class="navbar">
+      <a class="nav-link" aria-current="page" href="./home.html" tabindex="-1">
+        <div class="container">
+          <h3>Home</h3>
+          <p>Navigate</p>
+        </div>
+      </a>
+      <a class="nav-link" href="./blog.html" tabindex="-1">
+        <div class="container">
+          <h3>Blog</h3>
+          <p>Write Stories</p>
+        </div>
+      </a>
+      <a class="nav-link" href="./game.html" tabindex="-1">
+        <div class="container">
+          <h3>Game</h3>
+          <p>Relax</p>
+        </div>
+      </a>
+      <a class="nav-link" href="./focus.html" tabindex="-1">
+        <div id="circle"></div>
+        <div class="container">
+          <h3>Focus</h3>
+          <p>Mind over body</p>
+        </div>
+      </a>
+      <a class="nav-link" href="./quiz.html" tabindex="-1">
+        <div class="container">
+          <h3>Quiz</h3>
+          <p>Test yourself</p>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <div class="heroimage">
+    <h1>Focus and Calmness</h1>
+    <p>Music and Breathing exercise</p>
+    <a href="#breathing">Try now</a>
+  </div>
+  <section class="firstone">
+    <div class="title">
+      <h1 class="text-center text-capitalize">Benefits</h1>
+
+    </div>
+  </section>
+  <div class="row">
+    <div class="column">
+      <h2>Stress Reduction<i class="fa-solid fa-brain"></i></h2>
+      <p>When individuals engage in controlled, deep breathing, it signals to the brain that they are in a state of
+        calm, triggering the release of endorphins and reducing the production of stress hormones like cortisol.<br><br>
+        The "National Institute of Mental Health" highlights deep breathing as one of the effective coping strategies
+        for managing stress and improving emotional well-being.</p>
+    </div>
+    <div class="column">
+      <h2>Lower Blood Pressure<i class="fa-solid fa-heart"></i></h2>
+      <p>Deep breathing can promote vasodilation, which is the widening of blood vessels leading to lower resistance of
+        blood flow.<br><br>People experiencing anxiety lower their blood pressure by 30 points or more by doing some
+        deep breathing.</p>
+    </div>
+    <div class="column">
+      <h2>Better sleep&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"></i></h2>
+      <p> During controlled and deep breathing, Individuals activate the body's relaxation response, lowering stress
+        hormones and alleviating tension, helping them to fall alseep faster<br><br>A study published in the "Journal of
+        Clinical Psychology" in 2015 reported that mindfulness meditation, which often incorporates controlled
+        breathing, was associated with improved sleep quality in individuals with insomnia.</p>
+    </div>
+  </div>
+  <div id="breathing" class="breathing">
+    <div class="input">
+      <label>Select Breaths</label>
+      <select class="breath-input">
+        <option value="3">3 Breaths</option>
+        <option value="7">7 Breaths</option>
+        <option value="10">10 Breaths</option>
+      </select>
+    </div>
+    <div class="circle-wrap">
+      <div class="circle-outline"></div>
+      <div class="circle-progress"></div>
+    </div>
+    <p class="breaths">Breaths remaining: <span class="breaths-text">3</span></p>
+    <p class="instructions">Are you ready to start breathing?</p>
+    <div class="buttons">
+      <button class="start">Begin</button>
+    </div>
+  </div>
+  <div class="footer">
+    <h6>Created by Team Powerpuff Queens</h6>
+  </div>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+</body>
+
+</html>

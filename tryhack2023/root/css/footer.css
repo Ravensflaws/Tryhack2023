@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* FOOTER CSS  */
+
+.footer {
+    margin: 0;
+    font-family: 'Autour One', cursive;
+    padding: 20px;
+    background-color: #262626;
+    color: #fff;
+}
